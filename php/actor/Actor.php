@@ -24,7 +24,7 @@ class Actor {
     // dice roll value -nm
     private $roll;
     
-    function __construct($aId, $aMod) {
+    function __construct( $aId, $aMod ) {
         
         // set id and mod values -nm
         $this->id = $aId;
@@ -32,5 +32,21 @@ class Actor {
         
         // get random die roll value -nm
         $this->roll = TwentySideDie::roll();
+    }
+    
+    public function getId() {
+        return $this->id;
+    }
+
+    public function getMod() {
+        return $this->mod;
+    }
+
+    public function getRoll() {
+        return $this->roll;
+    }
+
+    public function getTotal(){
+        // TODO: return mod + roll -nm
     }
 }
