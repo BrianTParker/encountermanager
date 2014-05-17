@@ -36,6 +36,9 @@ class EncounterManager extends ASessionSingleton {
     
     public function step(){
         
+        // increment round count -nm
+        $this->roundCount++;
+        
         // TODO: handle stepping a turn -nm
     }
     
@@ -43,6 +46,9 @@ class EncounterManager extends ASessionSingleton {
         
         // TODO: build map of encounter data -nm
         // TODO: return json_encode(map) -nm
+        
+        // test; remove later -nm
+        print_r( $this );
     }
     
     private function sort(){
