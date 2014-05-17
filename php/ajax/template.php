@@ -16,7 +16,7 @@
  * On Success: 		
  * On Exception: 	JSON	- file, line, and message of the exception
  *************************************************************************** *
- * @author(s) nicholas malacarne <nicholas.malacarne@gmail.com>
+ * @author(s) 
  */
 try {
 
