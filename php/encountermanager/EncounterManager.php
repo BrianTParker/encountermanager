@@ -22,6 +22,8 @@ class EncounterManager extends ASessionSingleton {
     // current round number -nm
     private $roundCount = 0;
     
+    // TODO: track whos turn it is -nm
+    
     public function add( Actor $aActor ){
         
         // TODO: add actor to list -nm
