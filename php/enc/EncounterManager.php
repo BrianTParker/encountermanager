@@ -51,6 +51,12 @@ class EncounterManager extends ASessionSingleton {
         print_r( $this );
     }
     
+    public function reset(){
+        
+        // TODO: reset actor list -nm
+        // TODO: reset round count -nm
+    }
+    
     private function sort(){
         
         // TODO: sort actor list descending order by initiative -nm
