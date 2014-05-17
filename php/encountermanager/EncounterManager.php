@@ -20,4 +20,9 @@ class EncounterManager extends ASessionSingleton {
         
         // TODO: add actor to list -nm
     }
+    
+    private function sort(){
+        
+        // TODO: sort actor list descending order by initiative -nm
+    }
 }
