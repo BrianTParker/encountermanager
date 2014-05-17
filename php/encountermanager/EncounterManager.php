@@ -2,6 +2,7 @@
 /**********************************INCLUDE*********************************** *
 * **************************************************************************** */
 include_once( __DIR__ . '/../ASessionSingleton.php' );
+include_once( __DIR__ . '/../actor/Actor.php' );
 
 /**
  *
@@ -14,5 +15,9 @@ include_once( __DIR__ . '/../ASessionSingleton.php' );
  * @author(s) nicholas malacarne <nicholas.malacarne@gmail.com>
  */
 class EncounterManager extends ASessionSingleton {
-    //put your code here
+    
+    public function add( Actor $aActor ){
+        
+        // TODO: add actor to list -nm
+    }
 }
