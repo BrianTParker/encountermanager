@@ -26,7 +26,9 @@ class EncounterManager extends ASessionSingleton {
     
     public function add( Actor $aActor ){
         
-        // TODO: add actor to list -nm
+        array_push( $this->actors, $aActor );
+        
+        $this->sort();
     }
     
     public function remove( $aId ){
@@ -53,15 +55,27 @@ class EncounterManager extends ASessionSingleton {
     
     public function reset(){
         
-        // TODO: reset actor list -nm
+        $this->actors = array();
         // TODO: reset round count -nm
+    }
+    
+    public function __toString() {
+        
+        $str = "";
+        
+        foreach ( $this->actors as $actor ){
+            
+            $str .= $actor->getId();
+            $str .= "\t";
+            $str .= $actor->getTotal();
+            $str .= "<br>";
+        }
+        
+        return $str;
     }
     
     private function sort(){
         
-		usort($actors, array("Actor", "compare"));
-        
+        usort($this->actors, array("Actor", "compare")); 
     }
-	
-	
 }
