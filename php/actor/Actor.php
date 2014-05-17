@@ -11,7 +11,7 @@ include_once( __DIR__ . '/../dice/TwentySideDie.php' );
  * ************************************************************************** *
  *
  *************************************************************************** *
- * @author(s) nicholas malacarne <nicholas.malacarne@gmail.com>
+ * @author(s) nicholas malacarne <nicholas.malacarne@gmail.com>, Brian Parker <brithom.parker@gmail.com>
  */
 class Actor {
     
@@ -47,7 +47,7 @@ class Actor {
     }
 
     public function getTotal(){
-        // TODO: return mod + roll -nm
+        return $this->mod + $this->roll;
     }
     
     public function __toString() {
@@ -56,7 +56,9 @@ class Actor {
 
     public static function compare( Actor &$a, Actor &$b ){
         
-        // TODO: compare totals -nm
-        // TODO: manage equal totals -nm
+        if ($a == $b) {
+			return 0;
+		}
+		return ($a->getTotal() < $b->getTotal()) ? 1 : -1;
     }
 }

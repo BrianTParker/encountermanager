@@ -59,6 +59,9 @@ class EncounterManager extends ASessionSingleton {
     
     private function sort(){
         
-        // TODO: sort actor list descending order by initiative -nm
+		usort($actors, array("Actor", "compare"));
+        
     }
+	
+	
 }
