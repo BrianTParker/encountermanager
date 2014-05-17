@@ -54,4 +54,9 @@ class Actor {
         // TODO: return id? -nm
     }
 
+    public static function compare( Actor &$a, Actor &$b ){
+        
+        // TODO: compare totals -nm
+        // TODO: manage equal totals -nm
+    }
 }
