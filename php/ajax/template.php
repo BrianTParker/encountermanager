@@ -11,8 +11,6 @@
  *
  *************************************************************************** *
  * @param
- * $_POST - Each key/value pair is copied into an item array; then the item
- * 			is added to the cart
  *************************************************************************** *
  * @return 
  * On Success: 		
