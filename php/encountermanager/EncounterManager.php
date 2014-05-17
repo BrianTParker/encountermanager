@@ -37,6 +37,12 @@ class EncounterManager extends ASessionSingleton {
         // TODO: handle stepping a turn -nm
     }
     
+    public function getJSON(){
+        
+        // TODO: build map of encounter data -nm
+        // TODO: return json_encode(map) -nm
+    }
+    
     private function sort(){
         
         // TODO: sort actor list descending order by initiative -nm
