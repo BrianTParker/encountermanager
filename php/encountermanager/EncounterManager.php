@@ -16,6 +16,12 @@ include_once( __DIR__ . '/../actor/Actor.php' );
  */
 class EncounterManager extends ASessionSingleton {
     
+    // all actors -nm
+    private $actors = array();
+    
+    // current round number -nm
+    private $roundCount = 0;
+    
     public function add( Actor $aActor ){
         
         // TODO: add actor to list -nm
