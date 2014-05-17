@@ -27,6 +27,11 @@ class EncounterManager extends ASessionSingleton {
         // TODO: add actor to list -nm
     }
     
+    public function remove( $aId ){
+        
+        // TODO: remove actor from list by id value -nm
+    }
+    
     public function step(){
         
         // TODO: handle stepping a turn -nm
