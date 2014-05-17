@@ -49,4 +49,9 @@ class Actor {
     public function getTotal(){
         // TODO: return mod + roll -nm
     }
+    
+    public function __toString() {
+        // TODO: return id? -nm
+    }
+
 }
