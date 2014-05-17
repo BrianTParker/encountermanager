@@ -32,7 +32,7 @@
  *************************************************************************** *
  * @author(s) nicholas malacarne <nicholas.malacarne@gmail.com>
  */
-abstract class SessionSingleton {
+abstract class ASessionSingleton {
     
     // associative array of SessionSingleton instances -nm
     private static $instances = array();
