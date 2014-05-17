@@ -46,7 +46,7 @@ class Actor {
         return $this->roll;
     }
 
-    public function getTotal(){
+    public function getInitiative(){
         return $this->mod + $this->roll;
     }
     
@@ -59,6 +59,6 @@ class Actor {
         if ($a == $b) {
 			return 0;
 		}
-		return ($a->getTotal() < $b->getTotal()) ? 1 : -1;
+		return ($a->getInitiative() < $b->getInitiative()) ? 1 : -1;
     }
 }
