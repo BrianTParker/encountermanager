@@ -13,7 +13,7 @@ include_once( __DIR__ . '/php/enc/EncounterManager.php' );
 $ENC_MGR = EncounterManager::getInstance();
 
 $actors = array();
-$actors[] = new Actor("Brian", -2);
+$actors[] = new Actor("Brian", 3);
 $actors[] = new Actor("Nick", 5);
 $actors[] = new Actor("Chris", 2);
 

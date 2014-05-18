@@ -47,7 +47,13 @@ class Actor {
     }
 
     public function getInitiative(){
-        return $this->mod + $this->roll;
+		$i = $this->mod + $this->roll;
+		if($i >= 1){
+			return $i;
+		}else{
+			return 1;
+		}
+        
     }
     
     public function __toString() {
@@ -55,10 +61,27 @@ class Actor {
     }
 
     public static function compare( Actor &$a, Actor &$b ){
-        
-        if ($a == $b) {
-			return 0;
+        $i = 0;
+		
+        if ($a != $b) {
+			
+			//resolve equal initiatives first
+			if($a->getInitiative() == $b->getInitiative()){
+				if($a->getMod() == $b->getMod()){
+					$coin = rand(0, 1);
+					$i = ($coin == 0) ? 1 : -1;
+				}else{
+					$i = ($a->getMod() < $b->getMod()) ? 1 : -1;
+				}
+			}else{
+				$i = ($a->getInitiative() < $b->getInitiative()) ? 1 : -1;
+			}
+			
+			
 		}
-		return ($a->getInitiative() < $b->getInitiative()) ? 1 : -1;
+		
+		return $i;
+		
+		
     }
 }

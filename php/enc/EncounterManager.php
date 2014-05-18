@@ -68,6 +68,8 @@ class EncounterManager extends ASessionSingleton {
             $str .= $actor->getId();
             $str .= "\t";
             $str .= $actor->getInitiative();
+			$str .= "\t";
+            $str .= $actor->getMod();
             $str .= "<br>";
         }
         
